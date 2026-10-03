@@ -31,7 +31,7 @@ This pipeline was built to **eliminate all of that**. It runs locally, so the ma
 
 ---
 
-## Architecture overview
+## Architecture overview’’’
 [ Orchestrator ]
 │
 ├──► [ Text Model ] (local LLM)
@@ -50,7 +50,7 @@ This pipeline was built to **eliminate all of that**. It runs locally, so the ma
 │
 ▼
 [ Cleanup ]
-
+‘’’
 text
 
 Each stage is **independent** and **replaceable**. The orchestrator sequences them, handles failures, and manages resource contention.
