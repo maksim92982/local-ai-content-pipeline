@@ -31,7 +31,8 @@ This pipeline was built to **eliminate all of that**. It runs locally, so the ma
 
 ---
 
-## Architecture overview```
+## Architecture overview
+```
 [ Orchestrator ]
 │
 ├──► [ Text Model ] (local LLM)
