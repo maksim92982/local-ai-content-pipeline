@@ -48,8 +48,8 @@ This pipeline was built to **eliminate all of that**. It runs locally, so the ma
 │         │
 │         ▼
 └──► [ Publishing Layer ] (official social platform APIs)
-         │
-         ▼
+          │
+          ▼
      [ Cleanup ]
 ```
 
