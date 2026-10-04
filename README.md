@@ -1,6 +1,6 @@
 # Autonomous Local AI Content Pipeline
 
-> A production-grade AI content pipeline that runs **entirely on local hardware** — no cloud AI, no external API tokens. It generates, assembles, and publishes video content end-to-end, autonomously.
+> A production-grade AI content pipeline that runs **entirely on local hardware** — no cloud AI, no paid inference. It generates, assembles, and publishes video content end-to-end, autonomously.
 
 ---
 
@@ -11,7 +11,7 @@ The system orchestrates **multiple local AI models** into a single autonomous wo
 1. **Content generation** — text (captions, titles, descriptions)
 2. **Visual generation** — images from prompts
 3. **Media assembly** — video with text overlay, animation, audio
-4. **Publishing** — automated distribution to social platforms
+4. **Publishing** — automated distribution to social platforms via official APIs
 5. **Cleanup** — lifecycle management of generated media
 
 Everything runs on a **single machine**. No cloud AI services. No paid inference APIs.
@@ -47,7 +47,7 @@ This pipeline was built to **eliminate all of that**. It runs locally, so the ma
 ├──► [ Local Serving ] (exposed via secure tunnel)
 │ │
 │ ▼
-└──► [ Publishing Layer ] (social platform APIs)
+└──► [ Publishing Layer ] (official social platform APIs)
 │
 ▼
 [ Cleanup ]
@@ -89,16 +89,17 @@ I made deliberate choices about **sequencing**, **encoding**, and **fault tolera
 
 ### 4. Cost architecture
 
-The entire pipeline was designed around **zero external AI cost**. That constraint drove the architecture — and it's why the system can run **continuously** without burning a budget.
+The entire pipeline was designed around **zero paid AI cost**. That constraint drove the architecture — and it's why the system can run **continuously** without burning a budget.
 
 ---
 
 ## Results
 
-- **50 Reels published per day** to Instagram
+- **Throughput:** ~15 Reels/hour sustained on local hardware
+- **50 Reels published per day** to Instagram — daily cap is a platform limit, not the pipeline's ceiling
 - **50 posts published per day** to Telegram
 - **Fully autonomous** — no manual intervention per item
-- **Zero external AI API cost** — everything runs locally
+- **Zero paid AI inference cost** — everything runs locally
 
 The pipeline has moved from prototype to **daily production use**.
 
@@ -119,7 +120,8 @@ The pipeline has moved from prototype to **daily production use**.
 - **Language:** Python
 - **AI:** Local text generation, local image generation
 - **Media:** Video assembly, text overlay, audio
-- **Infrastructure:** Local serving, secure tunnel, social platform APIs
+- **Infrastructure:** Local serving, secure tunnel
+- **Publishing:** Official Instagram Graph API, Telegram Bot API
 - **Design:** Sequential orchestration, explicit resource trade-offs
 
 *Specific model choices, parameters, and pipeline details are intentionally omitted.*
