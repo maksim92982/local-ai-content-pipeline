@@ -36,20 +36,20 @@ This pipeline was built to **eliminate all of that**. It runs locally, so the ma
 [ Orchestrator ]
 │
 ├──► [ Text Model ] (local LLM)
-│ │
-│ ▼
+│         │
+│         ▼
 ├──► [ Image Model ] (local diffusion)
-│ │
-│ ▼
+│         │
+│         ▼
 ├──► [ Media Assembly ] (overlay + encode + audio)
-│ │
-│ ▼
+│         │
+│         ▼
 ├──► [ Local Serving ] (exposed via secure tunnel)
-│ │
-│ ▼
+│         │
+│         ▼
 └──► [ Publishing Layer ] (official social platform APIs)
-│
-▼
+       │
+       ▼
 [ Cleanup ]
 ```
 
