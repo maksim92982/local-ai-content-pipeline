@@ -48,9 +48,9 @@ This pipeline was built to **eliminate all of that**. It runs locally, so the ma
 │         │
 │         ▼
 └──► [ Publishing Layer ] (official social platform APIs)
-       │
-       ▼
-[ Cleanup ]
+         │
+         ▼
+     [ Cleanup ]
 ```
 
 Each stage is **independent** and **replaceable**. The orchestrator sequences them, handles failures, and manages resource contention.
